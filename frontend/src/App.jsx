@@ -6,6 +6,13 @@ import Ringkasan from "./components/Ringkasan";
 import FormTransaksi from "./components/FormTransaksi";
 import TabelTransaksi from "./components/TabelTransaksi";
 
+const api = axios.create({
+  baseURL: import.meta.env.VITE_API_URL,
+  headers: {
+      Accept: "application/json",
+  },
+});
+
 export default function App() {
   const [transaksi, setTransaksi] = useState([]);
   const [form, setForm] = useState({
