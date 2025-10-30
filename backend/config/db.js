@@ -4,7 +4,7 @@ import dns from "dns";
 dns.setDefaultResultOrder("ipv4first");
 
 const db = mysql.createConnection({
-    host: "localhost",
+    host: "127.0.0.1",
     user: "root",
     password: "Chikaalea0102$",
     database: "keuangan_db",
